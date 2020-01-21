@@ -79,6 +79,10 @@ p {
 
 /* header */
 
+.bg-dark{
+  background-color: rgb(42, 42, 42);
+}
+
 #logo {
   width: 35px;
   color: white;
@@ -90,12 +94,6 @@ p {
     color:grey;
     text-decoration: none;
   }
-}
-.fa-user-secret {
-  font-size: 60px;
-  border: 1px solid red; 
-  padding: 0;
-  margin: 0; 
 }
 
 /* forms */
@@ -156,14 +154,14 @@ input {
 /* Notifications Nav Button */
 
 .notice-btn-false{
-  background-color:#4120A9;
+  background-color:rgb(169, 32, 50);
 }
 
 .notice-btn-true{
   background-color:#7F8FA3;
 }
 
-/* icon */
+/* Buttons */
 
 .btn-neutral {
   color: grey;
@@ -171,20 +169,8 @@ input {
 }
 
 .btn-liked {
-  color: purple;
+  color: rgb(32, 118, 175);
   font-size: 20px;
-}
-
-.bg-rose {
-  background-color: #F6D4D2;
-}
-
-.bg-light-purple {
-  background-color: #B5B3CA;
-}
-
-.btn-violete {
-  background-color: #A16AE8;
 }
 
 .btn-decline {
@@ -192,31 +178,29 @@ input {
 }
 
 .btn-accept {
-  background-color: #4B0082;
+  background-color: rgb(48, 127, 138);
 }
 .btn-friend {
   color: white;
-  background-color: rgb(167, 65, 207);
+  background-color: rgb(133, 180, 102);
 }
 
 .btn-pending {
   color: white;
-  background-color: #00C6B7;
+  background-color: rgb(91, 200, 191);
 }
 
 .btn-user {
   color: white;
-  background-color: #0061CE;
+  background-color: rgb(245, 187, 94);
 }
-
-// 0061CE
-// 009ccA
-// 00C6B7
-// 00C279
 
 .size-12{
   font-size: 13px;
   color: rgb(170, 170, 170);
+}
+.size-18{
+  font-size: 18px;
 }
 .size-24{
   font-size: 24px;
@@ -236,7 +220,7 @@ input {
 
 .font-raleway{
   font-family: 'Raleway', sans-serif;
-  color: rgb(255, 255, 255) !important;
+  // color: rgb(255, 255, 255) !important;
   font-weight: bold;
   font-size: 14px;
 }
@@ -244,4 +228,39 @@ input {
 .font-rale{
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
+}
+
+.img-profile{
+  width: 60px;
+  height: 60px;
+  border-radius: 10em;
+}
+
+.img-fill{
+  width: 100%;
+  height: 100%;
+}
+
+a{color:black;}
+
+.card-lg{
+  border: 1px solid rgb(177, 175, 175);
+  border-radius: 1em;
+  padding: 16px;
+}
+
+.text-post{color: rgb(31, 31, 31);}
+
+.comment-box{
+  border: 1px solid $gray-medium-light;
+  border-radius: 10em;
+  padding: 12px;
+  height: 50px;
+  &:hover {
+    border-color:rgb(245, 187, 94);
+  }
+}
+
+.hover-red:hover{
+  color: red;
 }

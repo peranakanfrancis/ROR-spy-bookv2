@@ -1,4 +1,6 @@
+<span>
 <%= object.likes.count %>
+
 <%= link_to post_likes_path(object), class: "text-light", method: :post do %>
   <% if liked?(object, 'post') %>
       <button class="btn btn-liked"><i class="fas fa-thumbs-up"></i></button>
@@ -6,3 +8,5 @@
       <button class="btn btn-neutral"><i class="fas fa-thumbs-up"></i></button>
   <% end %>
 <% end %>
+Likes
+</span>
