@@ -299,7 +299,5 @@ Devise.setup do |config|
 
   config.omniauth :facebook,  ENV['FACEBOOK_APP_ID'], ENV['FACEBOOK_APP_SECRET'], 
                     token_params: { parse: :json }, scope: 'public_profile,email',
-                    info_fields: 'email,first_name,last_name,gender,birthday,location,picture',
-                    token_params: { parse: :json }
-
+                    info_fields: 'email,first_name,last_name,gender,birthday,location,picture'
 end
