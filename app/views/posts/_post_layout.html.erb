@@ -32,6 +32,11 @@
           <%= object.content %>
         </div>
     <% end %>
+    <% if current_user.id == object.user_id%>
+      <%= link_to post_path(object), method: :delete, data: { confirm: "You sure?" } do %>
+        <i class="fas fa-trash hover-red"></i>
+      <% end %>
+    <% end %>
   </div>
 
   <div class="border-bottom border-top">
