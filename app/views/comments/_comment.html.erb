@@ -1,7 +1,11 @@
     <%object.comments.each do |c|%>
       <div class=" p-2">
         <div class="row mt-3">
-          <div class="ml-2"><%= image_tag(c.user.image.url, class: "img-profile")%></div>
+          <div class="ml-2">
+          <% if c.user.image_url %>
+            <%= image_tag(c.user.image.url, class: "img-profile")%>
+          <%end%>
+          </div>
           <div class="mt-2">
             <div class="col font-weight-bold">
               <%= link_to user_path(c.user), class: "font-raleway" do%>
